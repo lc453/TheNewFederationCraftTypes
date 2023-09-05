@@ -1,0 +1,129 @@
+name: Battleship
+maxSize: 100000
+minSize: 10000
+allowedBlocks:
+    - "#planks"
+    - lava
+    - "#logs"
+    - "#glass"
+    - lapis_block
+    - dispenser
+    - note_block
+    - "#beds"
+    - sticky_piston
+    - piston
+    - piston_head
+    - bedrock
+    - "#wool"
+    - gold_block
+    - iron_block
+    - "#slabs"
+    - bricks
+    - polished_deepslate
+    - bookshelf
+    - torch
+    - wall_torch
+    - fire
+    - "#stairs"
+    - "#chests"
+    - redstone_wire
+    - diamond_block
+    - crafting_table
+    - furnace
+    - blast_furnace
+    - smoker
+    - "#signs"
+    - "#doors"
+    - ladder
+    - lever
+    - "#pressure_plates"
+    - redstone_torch
+    - redstone_wall_torch
+    - "#buttons"
+    - clay
+    - "#fences"
+    - netherrack
+    - glowstone
+    - cake
+    - repeater
+    - "#trapdoors"
+    - "#stone_bricks"
+    - iron_bars
+    - "#fence_gates"
+    - nether_brick
+    - enchanting_table
+    - brewing_stand
+    - cauldron
+    - end_stone
+    - dragon_egg
+    - redstone_lamp
+    - ender_chest
+    - tripwire_hook
+    - tripwire
+    - emerald_block
+    - beacon
+    - "#walls"
+    - flower_pot
+    - "#heads"
+    - "#anvil"
+    - comparator
+    - daylight_detector
+    - redstone_block
+    - hopper
+    - quartz_block
+    - chiseled_quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - activator_rail
+    - dropper
+    - "#terracotta"
+    - "#concrete"
+    - slime_block
+    - "#carpets"
+    - coal_block
+    - end_stone_bricks
+    - smooth_stone
+    - bell
+    - cartography_table
+    - composter
+    - fletching_table
+    - grindstone
+    - lantern
+    - lectern
+    - loom
+    - smithing_table
+    - stonecutter
+
+onlyMovePlayers: false
+moveEntities: true
+canDirectControl: false
+forbiddenBlocks:
+    - piston_head
+    - bedrock
+
+canCruise: true
+cruiseSkipBlocks: 4
+canFly: false
+sinkPercent: 99.0
+overallSinkPercent: 60.0
+minHeightLimit: 50
+maxHeightLimit: 80
+requireWaterContact: true
+allowVerticalMovement: false
+fuelBurnRate: 0.5
+speed: .5
+cruiseSpeed: 2.0
+tryNudge: false
+flyblocks:
+    ["#planks", "#wooden_slabs"]:
+        - 25.0
+        - 100.0
+    "#anvil": # anvils are OP armor, so limit it
+        - 0.0
+        - 1.0
+    obsidian: # so is obsidian
+        - 0.0
+        - 1.0
+    water: # so is water
+        - 0.0
+        - 1.0

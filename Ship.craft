@@ -1,0 +1,116 @@
+name: Ship
+maxSize: 2000
+minSize: 10
+allowedBlocks:
+    - "#planks"
+    - "#logs"
+    - "#glass"
+    - lapis_block
+    - note_block
+    - "#beds"
+    - sticky_piston
+    - piston
+    - piston_head
+    - "#wool"
+    - bedrock
+    - gold_block
+    - iron_block
+    - "#wooden_slabs"
+    - bookshelf
+    - torch
+    - wall_torch
+    - fire
+    - "#wooden_stairs"
+    - "#chests"
+    - redstone_wire
+    - diamond_block
+    - crafting_table
+    - furnace
+    - blast_furnace
+    - smoker
+    - "#signs"
+    - "#doors"
+    - ladder
+    - lever
+    - "#pressure_plates"
+    - redstone_torch
+    - redstone_wall_torch
+    - "#buttons"
+    - "#fences"
+    - glowstone
+    - cake
+    - repeater
+    - "#trapdoors"
+    - iron_bars
+    - "#fence_gates"
+    - enchanting_table
+    - brewing_stand
+    - cauldron
+    - end_stone
+    - dragon_egg
+    - redstone_lamp
+    - ender_chest
+    - tripwire_hook
+    - tripwire
+    - emerald_block
+    - flower_pot
+    - "#heads"
+    - "#anvil"
+    - daylight_detector
+    - redstone_block
+    - hopper
+    - activator_rail
+    - dropper
+    - slime_block
+    - "#carpets"
+    - bell
+    - cartography_table
+    - composter
+    - fletching_table
+    - grindstone
+    - lantern
+    - lectern
+    - loom
+    - smithing_table
+    - stonecutter
+
+onlyMovePlayers: false
+moveEntities: true
+canDirectControl: false
+forbiddenBlocks:
+    - piston_head
+    - bedrock
+
+canCruise: true
+cruiseSkipBlocks: 4
+canFly: false
+sinkPercent: 99.0
+overallSinkPercent: 60.0
+minHeightLimit: 50
+maxHeightLimit: 80
+requireWaterContact: true
+allowVerticalMovement: false
+speed: 2.0
+cruiseSpeed: 4.0
+tryNudge: false
+flyblocks:
+    ["#planks", "#wooden_slabs", "#logs", "#wooden_stairs"]:
+        - 50.0
+        - 100.0
+    "#anvil": # anvils are OP armor, so limit it
+        - 0.0
+        - 1.0
+    obsidian: # so is obsidian
+        - 0.0
+        - 1.0
+    water: # so is water
+        - 0.0
+        - 1.0
+
+
+passthroughBlocks:
+    - kelp_plant
+    - seagrass
+    - kelp
+    - tall_seagrass
+    - bubble_column
