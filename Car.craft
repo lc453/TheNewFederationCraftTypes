@@ -223,3 +223,4 @@ harvesterBladeBlocks:
     - grindstone
     - smithing_table
     - stonecutter
+allowAADirectors: true

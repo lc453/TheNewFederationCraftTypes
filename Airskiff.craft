@@ -125,3 +125,5 @@ flyblocks:
     water: # so is water
         - 0.0
         - 1.0
+allowAADirectors: false
+allowCannonDirectors: false

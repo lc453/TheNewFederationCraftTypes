@@ -105,13 +105,13 @@ forbiddenBlocks:
 canCruise: true
 rotateAtMidpoint: true
 canFly: true
-maxHeightLimit: 135
+maxHeightLimit: 155
 vertCruiseSkipBlocks: 3
 collisionExplosion: 0.0
 detectionMultiplier: 10.0
 underwaterDetectionMultiplier: 1.0
 speed: 0.5
-cruiseSkipBlocks: 4
+cruiseSkipBlocks: 18
 cruiseSpeed: 2
 fuelBurnRate: 0.5
 sinkPercent: 99.0
@@ -145,3 +145,5 @@ flyblocks:
     water: # so is water
         - 0.0
         - 1.0
+allowCannonDirectors: true
+allowAADirectors: true

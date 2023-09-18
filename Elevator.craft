@@ -1,6 +1,6 @@
 name: elevator
 maxSize: 1000
-minSize: 10
+minSize: 4
 allowedBlocks:
     - "#planks"
     - water
@@ -77,13 +77,15 @@ forbiddenBlocks:
     - piston_head
 
 canFly: true
-canCruise: false
+canCruise: true
+canDirectControl: false
 collisionExplosion: 0.0
 allowHorizontalMovement: false
 canStaticMove: true
-maxStaticMove: 2
+maxStaticMove: 24
 detectionMultiplier: 30.0
 underwaterDetectionMultiplier: 3.0
 speed: 1.0
+cruiseSpeed: 4.0
 tryNudge: false
 sinkPercent: 99.0

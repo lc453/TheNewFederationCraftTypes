@@ -95,6 +95,7 @@ allowedBlocks:
 
 
 canCruise: true
+cruiseSkipBlocks: 4
 canFly: false
 sinkPercent: 99.0
 overallSinkPercent: 60.0
@@ -227,3 +228,5 @@ harvesterBladeBlocks:
     - grindstone
     - smithing_table
     - stonecutter
+allowCannonDirectors: true
+allowAADirectors: true

@@ -106,7 +106,7 @@ canCruise: true
 rotateAtMidpoint: true
 blockRemoteRotate: true
 canFly: true
-maxHeightLimit: 110
+maxHeightLimit: 145
 vertCruiseSkipBlocks: 4
 collisionExplosion: 0.0
 speed: 0.8
@@ -146,3 +146,5 @@ flyblocks:
     water: # so is water
         - 0.0
         - 1.0
+allowCannonDirectors: true
+allowAADirectors: true

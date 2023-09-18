@@ -101,7 +101,7 @@ forbiddenBlocks:
     - bedrock
 
 canCruise: true
-cruiseSkipBlocks: 4
+cruiseSkipBlocks: 12
 canFly: false
 sinkPercent: 99.0
 overallSinkPercent: 60.0
@@ -114,7 +114,7 @@ speed: 0.75
 cruiseSpeed: 2.0
 tryNudge: false
 flyblocks:
-    ["#planks", "#wooden_slabs"]:
+    [oak_planks, acacia_planks, dark_oak_planks, bamboo_planks, jungle_planks, birch_planks, cherry_planks, mangrove_planks, spruce_planks]:
         - 25.0
         - 100.0
     "#anvil": # anvils are OP armor, so limit it
@@ -134,3 +134,6 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
+    
+allowCannonDirectors: true
+allowAADirectors: true

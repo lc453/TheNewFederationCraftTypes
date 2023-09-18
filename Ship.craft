@@ -94,7 +94,7 @@ speed: 2.0
 cruiseSpeed: 4.0
 tryNudge: false
 flyblocks:
-    ["#planks", "#wooden_slabs", "#logs", "#wooden_stairs"]:
+    [oak_planks, acacia_planks, dark_oak_planks, bamboo_planks, jungle_planks, birch_planks, cherry_planks, mangrove_planks, spruce_planks]:
         - 50.0
         - 100.0
     "#anvil": # anvils are OP armor, so limit it
@@ -114,3 +114,5 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
+allowAADirectors: false
+allowCannonDirectors: false
