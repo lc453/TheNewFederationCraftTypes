@@ -154,3 +154,5 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
+allowCannonDirectors: true
+allowAADirectors: true
