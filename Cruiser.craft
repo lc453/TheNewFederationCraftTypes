@@ -76,6 +76,11 @@ allowedBlocks:
     - smooth_quartz
     - activator_rail
     - dropper
+    - observer
+    - target
+    - jukebox
+    - chiseled_bookshelf
+    - lightning_rod
     - "#terracotta"
     - "#concrete"
     - slime_block

@@ -76,6 +76,11 @@ allowedBlocks:
     - smooth_quartz
     - activator_rail
     - dropper
+    - observer
+    - target
+    - jukebox
+    - chiseled_bookshelf
+    - lightning_rod
     - "#terracotta"
     - "#concrete"
     - slime_block
@@ -130,9 +135,6 @@ flyblocks:
     "#wool": #wool represents lift
         - 50.0
         - 100.0
-    [dispenser,hopper,dropper]: # dispensers and hoppers can be used for inventory too, so limit them as well
-        - 0.0
-        - 2.0
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0

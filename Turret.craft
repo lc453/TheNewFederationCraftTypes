@@ -56,6 +56,10 @@ allowedBlocks:
     - hopper
     - activator_rail
     - dropper
+    - observer
+    - target
+    - jukebox
+    - chiseled_bookshelf
     - gray_terracotta
     - light_gray_terracotta
     - black_terracotta

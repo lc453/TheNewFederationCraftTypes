@@ -65,6 +65,11 @@ allowedBlocks:
     - hopper
     - activator_rail
     - dropper
+    - observer
+    - target
+    - jukebox
+    - chiseled_bookshelf
+    - lightning_rod
     - slime_block
     - "#carpets"
     - coal_block

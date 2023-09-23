@@ -75,6 +75,11 @@ allowedBlocks:
     - smooth_quartz
     - activator_rail
     - dropper
+    - observer
+    - target
+    - jukebox
+    - chiseled_bookshelf
+    - lightning_rod
     - "#terracotta"
     - "#concrete"
     - slime_block
@@ -123,13 +128,17 @@ flyblocks:
         - 0.0
         - N2
 
-harvestBlocks:
+passthroughBlocks:
     - grass
     - tall_grass
     - fern
     - large_fern
     - "#flowers"
     - dead_bush
+    - small_dripleaf
+    - big_dripleaf
+
+harvestBlocks:
     - "#saplings"
     - "#crops"
     - cobweb
@@ -138,11 +147,7 @@ harvestBlocks:
     - red_mushroom
     - crimson_fungus
     - warped_fungus
-    - small_dripleaf
-    - big_dripleaf
     - sugar_cane
-    - crimson_roots
-    - warped_roots
     - "#carpets"
     - "#buttons"
     - torch
@@ -153,7 +158,6 @@ harvestBlocks:
     - "#pressure_plates"
     - tripwire_hook
     - tripwire
-    - "#rails"
     - repeater
     - comparator
     - redstone_wire

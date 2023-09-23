@@ -32,6 +32,7 @@ allowedBlocks:
     - "#doors"
     - ladder
     - lever
+    - lightning_rod
     - "#pressure_plates"
     - redstone_torch
     - redstone_wall_torch
