@@ -19,6 +19,7 @@ allowedBlocks:
     - iron_block
     - "#slabs"
     - bricks
+    - polished_deepslate
     - bookshelf
     - torch
     - wall_torch
