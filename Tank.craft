@@ -1,8 +1,9 @@
 name: Tank
-maxSize: 10000
+maxSize: 5000
 minSize: 100
 allowedBlocks:
     - "#planks"
+    - water
     - lava
     - "#logs"
     - "#glass"
