@@ -142,3 +142,13 @@ flyblocks:
         - 1.0
 allowCannonDirectors: true
 allowAADirectors: true
+
+passthroughBlocks:
+    - grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf
