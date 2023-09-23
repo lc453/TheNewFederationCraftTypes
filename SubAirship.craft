@@ -1,5 +1,5 @@
 name: SubAirship
-maxSize: 20000
+maxSize: 5000
 minSize: 1000
 allowedBlocks:
     - "#planks"
