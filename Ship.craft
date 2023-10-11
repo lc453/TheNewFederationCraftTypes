@@ -95,9 +95,12 @@ speed: 2.0
 cruiseSpeed: 4.0
 tryNudge: false
 flyblocks:
-    [oak_planks, acacia_planks, dark_oak_planks, bamboo_planks, jungle_planks, birch_planks, cherry_planks, mangrove_planks, spruce_planks]:
+    "#planks":
         - 50.0
         - 100.0
+    [crimson_planks, warped_planks]:
+        - 0.0
+        - 10.0
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0

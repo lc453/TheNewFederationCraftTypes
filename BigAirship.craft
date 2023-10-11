@@ -1,6 +1,6 @@
 name: BigAirship
 maxSize: 40000
-minSize: 10000
+minSize: 5000
 allowedBlocks:
     - "#planks"
     - water
