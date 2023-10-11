@@ -1,0 +1,204 @@
+name: Drill
+maxSize: 1000
+minSize: 10
+allowedBlocks:
+    - "#planks"
+    - "#logs"
+    - "#glass"
+    - lapis_block
+    - bedrock
+    - "#wool"
+    - gold_block
+    - iron_block
+    - "#slabs"
+    - bricks
+    - torch
+    - wall_torch
+    - fire
+    - "#stairs"
+    - "#chests"
+    - diamond_block
+    - crafting_table
+    - furnace
+    - "#signs"
+    - "#doors"
+    - ladder
+    - "#fences"
+    - "#trapdoors"
+    - "#stone_bricks"
+    - iron_bars
+    - "#fence_gates"
+    - nether_brick
+    - dragon_egg
+    - ender_chest
+    - emerald_block
+    - beacon
+    - "#walls"
+    - flower_pot
+    - "#heads"
+    - redstone_block
+    - quartz_block
+    - chiseled_quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - jukebox
+    - lightning_rod
+    - "#terracotta"
+    - "#concrete"
+    - slime_block
+    - "#carpets"
+    - smooth_stone
+    - lantern
+    - stonecutter
+
+canCruise: true
+canFly: false
+sinkPercent: 00.0
+overallSinkPercent: 00.0
+allowVerticalMovement: false
+canHover: false
+canHoverOverWater: true
+useGravity: false
+hoverLimit: 1
+onlyMovePlayers: false
+moveEntities: true
+canDirectControl: false
+forbiddenBLocks:
+    - piston_head
+
+fuelBurnRate: 1
+speed: 0.25
+cruiseSpeed: 0.25
+tryNudge: false
+flyblocks:
+    diamond_block:
+        - 25.0
+        - 100.0
+
+passthroughBlocks:
+    - grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf
+    - water
+    - lava
+
+harvestBlocks:
+    - "#saplings"
+    - "#crops"
+    - cobweb
+    - sweet_berry_bush
+    - brown_mushroom
+    - red_mushroom
+    - crimson_fungus
+    - warped_fungus
+    - sugar_cane
+    - "#carpets"
+    - "#buttons"
+    - torch
+    - lever
+    - redstone_torch
+    - redstone_wall_torch
+    - "#signs"
+    - "#pressure_plates"
+    - tripwire_hook
+    - tripwire
+    - repeater
+    - comparator
+    - redstone_wire
+    - "#trapdoors"
+    - stone
+    - cobblestone
+    - deepslate
+    - cobbled_deepslate
+    - granite
+    - andesite
+    - diorite
+    - calcite
+    - tuff
+    - netherrack
+    - crimson_nylium
+    - warped_nylium
+    - magma_block
+    - glowstone
+    - blackstone
+    - basalt
+    - smooth_basalt
+    - end_stone
+    - dirt
+    - coarse_dirt
+    - rooted_dirt
+    - dirt_path
+    - grass_block
+    - podzol
+    - mycelium
+    - farmland
+    - mud
+    - clay
+    - soul_sand
+    - soul_soil
+    - gravel
+    - sand
+    - sandstone
+    - red_sand
+    - red_sandstone
+    - coal_ore
+    - deepslate_coal_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - copper_ore
+    - deepslate_copper_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - emerald_ore
+    - deepslate_emerald_ore
+    - lapis_ore
+    - deepslate_lapis_ore
+    - diamond_ore
+    - deepslate_diamond_ore
+    - nether_gold_ore
+    - nether_quartz_ore
+
+
+harvesterBladeBlocks:
+    - "#planks"
+    - "#logs"
+    - "#glass"
+    - lapis_block
+    - bedrock
+    - "#wool"
+    - gold_block
+    - iron_block
+    - "#slabs"
+    - bricks
+    - fire
+    - "#stairs"
+    - "#chests"
+    - diamond_block
+    - "#fences"
+    - "#stone_bricks"
+    - iron_bars
+    - "#fence_gates"
+    - nether_brick
+    - ender_chest
+    - emerald_block
+    - beacon
+    - "#walls"
+    - "#heads"
+    - redstone_block
+    - quartz_block
+    - chiseled_quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - "#terracotta"
+    - "#concrete"
+    - smooth_stone
+    - stonecutter
+
+allowAADirectors: true
