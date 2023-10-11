@@ -1,5 +1,5 @@
 name: LaunchTorpedo
-maxSize: 7
+maxSize: 10
 minSize: 1
 allowedBlocks: 
     - coal_block
