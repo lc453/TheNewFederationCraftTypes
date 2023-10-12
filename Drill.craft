@@ -100,6 +100,7 @@ harvestBlocks:
     - "#carpets"
     - "#buttons"
     - torch
+    - wall_torch
     - lever
     - redstone_torch
     - redstone_wall_torch
