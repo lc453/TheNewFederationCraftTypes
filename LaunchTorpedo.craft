@@ -1,5 +1,5 @@
 name: LaunchTorpedo
-maxSize: 10
+maxSize: 5
 minSize: 1
 allowedBlocks: 
     - coal_block
@@ -25,3 +25,19 @@ flyblocks:
     coal_block:
         - 10.0
         - 100.0
+
+passthroughBlocks:
+    - kelp_plant
+    - seagrass
+    - kelp
+    - tall_seagrass
+    - bubble_column
+    - grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf
+    - "#glass_panes"
