@@ -107,7 +107,7 @@ flyblocks:
         - 100.0
     dispenser : # Limit on dispensers to prevent TNT cannons but allow more firepower than airskiff
         - 0.0
-        - 6.0
+        - N6
     redstone_block: # redstone represents engines
         - 8.0
         - 100.0
