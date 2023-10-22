@@ -113,8 +113,8 @@ canFly: true
 maxHeightLimit: 155
 vertCruiseSkipBlocks: 3
 collisionExplosion: 0.0
-detectionMultiplier: 100.0
-underwaterDetectionMultiplier: 15.0
+detectionMultiplier: 50.0
+underwaterDetectionMultiplier: 10.0
 speed: 0.5
 cruiseSkipBlocks: 18
 cruiseSpeed: 2
