@@ -76,6 +76,11 @@ flyblocks:
         - 100.0
 
 passthroughBlocks:
+    - kelp_plant
+    - seagrass
+    - kelp
+    - tall_seagrass
+    - bubble_column
     - grass
     - tall_grass
     - fern
@@ -86,6 +91,7 @@ passthroughBlocks:
     - big_dripleaf
     - water
     - lava
+    - glow_lichen
 
 harvestBlocks:
     - "#saplings"
@@ -97,6 +103,9 @@ harvestBlocks:
     - crimson_fungus
     - warped_fungus
     - sugar_cane
+    - "#leaves"
+    - hanging_roots
+    - glow_berries
     - "#carpets"
     - "#buttons"
     - torch
@@ -139,6 +148,8 @@ harvestBlocks:
     - mycelium
     - farmland
     - mud
+    - moss_carpet
+    - moss_block
     - clay
     - soul_sand
     - soul_soil
@@ -147,6 +158,15 @@ harvestBlocks:
     - sandstone
     - red_sand
     - red_sandstone
+    - pointed_dripstone
+    - dripstone_block
+    - prismarine
+    - amethyst_block
+    - budding_amethyst
+    - small_amethyst_bud
+    - medium_amethyst_bud
+    - large_amethyst_bud
+    - amethyst_cluster
     - coal_ore
     - deepslate_coal_ore
     - iron_ore
@@ -165,6 +185,10 @@ harvestBlocks:
     - deepslate_diamond_ore
     - nether_gold_ore
     - nether_quartz_ore
+    - "#rails"
+    - "#fences"
+    - "#fence_gates"
+    - "#walls"
 
 
 harvesterBladeBlocks:
