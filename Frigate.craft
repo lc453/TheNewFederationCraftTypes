@@ -130,5 +130,13 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
+    - grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf
 allowCannonDirectors: true
 allowAADirectors: true

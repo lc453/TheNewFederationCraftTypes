@@ -121,7 +121,7 @@ cruiseSpeed: 2.0
 tryNudge: false
 flyblocks:
     "#planks":
-        - 50.0
+        - 25.0
         - 100.0
     [crimson_planks, warped_planks]:
         - 0.0
@@ -135,5 +135,23 @@ flyblocks:
     water: # so is water
         - 0.0
         - 1.0
+
+
+passthroughBlocks:
+    - kelp_plant
+    - seagrass
+    - kelp
+    - tall_seagrass
+    - bubble_column
+    - grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf
+
+
 allowCannonDirectors: true
 allowAADirectors: true
