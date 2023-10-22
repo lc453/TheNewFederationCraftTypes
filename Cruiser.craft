@@ -116,8 +116,10 @@ maxHeightLimit: 80
 requireWaterContact: true
 allowVerticalMovement: false
 fuelBurnRate: 0.1
-speed: 0.75
+speed: 0.8
 cruiseSpeed: 2.0
+detectionMultiplier: 10.0
+underwaterDetectionMultiplier: 10.0
 tryNudge: false
 flyblocks:
     "#planks":

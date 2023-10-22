@@ -94,8 +94,8 @@ fuelBurnRate: 0.05
 explodeOnCrash: 2.0
 sinkSpeed: 3.0
 overallSinkPercent: 97.0
-detectionMultiplier: 20.0
-underwaterDetectionMultiplier: 2.0
+detectionMultiplier: 8.0
+underwaterDetectionMultiplier: 1.0
 smokeOnSink: 1
 keepMovingOnSink: true
 speed: 2.0

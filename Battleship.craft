@@ -118,6 +118,8 @@ allowVerticalMovement: false
 fuelBurnRate: 0.5
 speed: .5
 cruiseSpeed: 2.0
+detectionMultiplier: 10.0
+underwaterDetectionMultiplier: 10.0
 tryNudge: false
 flyblocks:
     "#planks":

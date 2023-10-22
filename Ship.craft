@@ -93,6 +93,8 @@ requireWaterContact: true
 allowVerticalMovement: false
 speed: 2.0
 cruiseSpeed: 4.0
+detectionMultiplier: 10.0
+underwaterDetectionMultiplier: 10.0
 tryNudge: false
 flyblocks:
     "#planks":

@@ -103,6 +103,8 @@ sinkPercent: 99.0
 overallSinkPercent: 60.0
 speed: 0.5
 cruiseSpeed: 2.0
+detectionMultiplier: 1.0
+underwaterDetectionMultiplier: 10.0
 onlyMovePlayers: false
 moveEntities: true
 canDirectControl: false

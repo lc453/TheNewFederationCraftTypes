@@ -122,6 +122,8 @@ forbiddenBLocks:
 fuelBurnRate: 0.3
 speed: 1.0
 cruiseSpeed: 2.0
+detectionMultiplier: 8.0
+underwaterDetectionMultiplier: 1.0
 tryNudge: false
 flyblocks:
     redstone_block:
