@@ -1,6 +1,6 @@
 name: Cruiser
 maxSize: 10000
-minSize: 1000
+minSize: 5000
 allowedBlocks:
     - "#planks"
     - lava

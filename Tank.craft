@@ -1,6 +1,6 @@
 name: Tank
 maxSize: 5000
-minSize: 100
+minSize: 500
 allowedBlocks:
     - "#planks"
     - water
