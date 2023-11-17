@@ -15,6 +15,7 @@ allowedBlocks:
     - "#slabs"
     - bookshelf
     - torch
+    - wall_torch
     - "#wooden_stairs"
     - nether_brick_stairs
     - "#chests"
@@ -47,6 +48,7 @@ allowedBlocks:
     - beacon
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector
@@ -86,6 +88,6 @@ allowHorizontalMovement: false
 allowVerticalMovement: false
 speed: 1.0
 tryNudge: false
-sinkPercent: 99.0
-allowCannonDirectors: true
-allowAADirectors: true
+overallSinkPercent: 99
+detectionMultiplier: 10.0
+underwaterDetectionMultiplier: 10.0

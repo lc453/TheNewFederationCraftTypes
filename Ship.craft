@@ -56,6 +56,7 @@ allowedBlocks:
     - emerald_block
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - daylight_detector
     - redstone_block
@@ -86,15 +87,15 @@ canCruise: true
 cruiseSkipBlocks: 4
 canFly: false
 sinkPercent: 99.0
-overallSinkPercent: 60.0
+overallSinkPercent: 90.0
 minHeightLimit: 50
 maxHeightLimit: 80
 requireWaterContact: true
 allowVerticalMovement: false
 speed: 2.0
 cruiseSpeed: 4.0
-detectionMultiplier: 10.0
-underwaterDetectionMultiplier: 10.0
+detectionMultiplier: 4.0
+underwaterDetectionMultiplier: 4.0
 tryNudge: false
 flyblocks:
     "#planks":
@@ -128,5 +129,3 @@ passthroughBlocks:
     - dead_bush
     - small_dripleaf
     - big_dripleaf
-allowAADirectors: false
-allowCannonDirectors: false

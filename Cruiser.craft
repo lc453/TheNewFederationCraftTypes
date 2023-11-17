@@ -40,9 +40,7 @@ allowedBlocks:
     - redstone_torch
     - redstone_wall_torch
     - "#buttons"
-    - clay
     - "#fences"
-    - netherrack
     - glowstone
     - cake
     - repeater
@@ -65,6 +63,7 @@ allowedBlocks:
     - "#walls"
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector
@@ -109,8 +108,8 @@ forbiddenBlocks:
 canCruise: true
 cruiseSkipBlocks: 12
 canFly: false
-sinkPercent: 99.0
-overallSinkPercent: 60.0
+sinkPercent: 95.0
+overallSinkPercent: 80.0
 minHeightLimit: 50
 maxHeightLimit: 80
 requireWaterContact: true
@@ -118,8 +117,8 @@ allowVerticalMovement: false
 fuelBurnRate: 0.1
 speed: 0.8
 cruiseSpeed: 2.0
-detectionMultiplier: 20.0
-underwaterDetectionMultiplier: 30.0
+detectionMultiplier: 12.0
+underwaterDetectionMultiplier: 12.0
 tryNudge: false
 flyblocks:
     "#planks":
@@ -153,6 +152,3 @@ passthroughBlocks:
     - dead_bush
     - small_dripleaf
     - big_dripleaf
-    
-allowCannonDirectors: true
-allowAADirectors: true

@@ -18,6 +18,7 @@ allowedBlocks:
     - "#slabs"
     - bookshelf
     - torch
+    - wall_torch
     - "#stairs"
     - "#chests"
     - redstone_wire
@@ -32,6 +33,7 @@ allowedBlocks:
     - lever
     - "#pressure_plates"
     - redstone_torch
+    - redstone_wall_torch
     - "#buttons"
     - "#fences"
     - cake
@@ -50,6 +52,7 @@ allowedBlocks:
     - beacon
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector
@@ -83,9 +86,9 @@ collisionExplosion: 0.0
 allowHorizontalMovement: false
 canStaticMove: true
 maxStaticMove: 24
-detectionMultiplier: 30.0
-underwaterDetectionMultiplier: 3.0
+detectionMultiplier: 10.0
+underwaterDetectionMultiplier: 10.0
 speed: 1.0
 cruiseSpeed: 4.0
 tryNudge: false
-sinkPercent: 99.0
+overallSinkPercent: 99.0

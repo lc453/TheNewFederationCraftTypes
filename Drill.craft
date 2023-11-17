@@ -36,6 +36,7 @@ allowedBlocks:
     - "#walls"
     - flower_pot
     - "#heads"
+    - "#banners"
     - redstone_block
     - quartz_block
     - chiseled_quartz_block
@@ -53,8 +54,10 @@ allowedBlocks:
 
 canCruise: true
 canFly: false
-sinkPercent: 00.0
-overallSinkPercent: 00.0
+sinkPercent: 99.0
+overallSinkPercent: 99.0
+detectionMultiplier: 4.0
+underwaterDetectionMultiplier: 4.0
 allowVerticalMovement: false
 canHover: false
 canHoverOverWater: true
@@ -225,5 +228,3 @@ harvesterBladeBlocks:
     - "#concrete"
     - smooth_stone
     - stonecutter
-
-allowAADirectors: true

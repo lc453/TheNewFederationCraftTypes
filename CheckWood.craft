@@ -40,9 +40,7 @@ allowedBlocks:
     - redstone_torch
     - redstone_wall_torch
     - "#buttons"
-    - clay
     - "#fences"
-    - netherrack
     - glowstone
     - cake
     - repeater
@@ -65,6 +63,7 @@ allowedBlocks:
     - "#walls"
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector

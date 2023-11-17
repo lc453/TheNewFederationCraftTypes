@@ -56,6 +56,7 @@ allowedBlocks:
     - beacon
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector
@@ -93,14 +94,14 @@ collisionExplosion: 0.0
 fuelBurnRate: 0.01
 explodeOnCrash: 2.0
 sinkSpeed: 3.0
-overallSinkPercent: 97.0
-detectionMultiplier: 5.0
+overallSinkPercent: 99.0
+sinkPercent: 99.0
+detectionMultiplier: 50.0
 underwaterDetectionMultiplier: 1.0
 smokeOnSink: 1
 keepMovingOnSink: true
 speed: 3.0
 tryNudge: false
-sinkPercent: 99.0
 flyblocks:
     "#wool": #wool represents lift
         - 50.0
@@ -123,5 +124,3 @@ flyblocks:
     water: # so is water
         - 0.0
         - 1.0
-allowAADirectors: false
-allowCannonDirectors: false

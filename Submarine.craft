@@ -40,9 +40,7 @@ allowedBlocks:
     - redstone_torch
     - redstone_wall_torch
     - "#buttons"
-    - clay
     - "#fences"
-    - netherrack
     - glowstone
     - cake
     - repeater
@@ -65,6 +63,7 @@ allowedBlocks:
     - "#walls"
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector
@@ -100,10 +99,10 @@ canFly: false
 minHeightLimit: 10
 maxHeightLimit: 67
 sinkPercent: 99.0
-overallSinkPercent: 60.0
+overallSinkPercent: 99.0
 speed: 0.5
 cruiseSpeed: 2.0
-detectionMultiplier: 1.0
+detectionMultiplier: 30.0
 underwaterDetectionMultiplier: 10.0
 onlyMovePlayers: false
 moveEntities: true

@@ -58,6 +58,7 @@ allowedBlocks:
     - "#walls"
     - flower_pot
     - "#heads"
+    - "#banners"
     - "#anvil"
     - comparator
     - daylight_detector
@@ -94,16 +95,16 @@ forbiddenBlocks:
 canCruise: true
 cruiseSkipBlocks: 4
 canFly: false
-sinkPercent: 99.0
-overallSinkPercent: 60.0
+sinkPercent: 95.0
+overallSinkPercent: 90.0
 minHeightLimit: 50
 maxHeightLimit: 80
 requireWaterContact: true
 allowVerticalMovement: false
 speed: 1.5
 cruiseSpeed: 3.0
-detectionMultiplier: 10.0
-underwaterDetectionMultiplier: 10.0
+detectionMultiplier: 8.0
+underwaterDetectionMultiplier: 8.0
 tryNudge: false
 flyblocks:
     "#planks":
@@ -140,5 +141,3 @@ passthroughBlocks:
     - dead_bush
     - small_dripleaf
     - big_dripleaf
-allowCannonDirectors: true
-allowAADirectors: true
