@@ -1,0 +1,299 @@
+name: Humvee
+maxSize: 500
+minSize: 100
+allowedBlocks: 
+    # BUILDING BLOCKS
+    - "#concrete"
+    - "#glass"
+    - "#logs"
+    - "#planks" 
+    - "#slabs"
+    - "#stairs"
+    - "#stone_bricks"
+    - "#terracotta"
+    - "#wool"
+    - bricks
+    - chiseled_quartz_block
+    - coal_block
+    - end_stone
+    - end_stone_bricks
+    - nether_brick
+    - quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - smooth_stone
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
+    - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - activator_rail
+    - comparator
+    - daylight_detector
+    - dispenser
+    - dropper
+    - hopper
+    - lever
+    - note_block
+    - observer
+    - piston
+    - piston_head
+    - redstone_block
+    - redstone_lamp
+    - redstone_torch
+    - redstone_wall_torch
+    - redstone_wire
+    - repeater
+    - sticky_piston
+    - target
+    - tripwire
+    - tripwire_hook
+    # DECORATIVE BLOCKS
+    - "#banners"
+    - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
+    - bell
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
+    - lantern
+    - torch
+    - wall_torch
+    # UTILITY BLOCKS
+    - "#anvil"
+    - "#beds"
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - "#walls"
+    - blast_furnace
+    - brewing_stand
+    - cartography_table
+    - cauldron
+    - fletching_table
+    - composter
+    - grindstone
+    - lectern
+    - loom
+    - smithing_table
+    - smoker
+    - stonecutter
+    - crafting_table
+    - enchanting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    - lava
+    - water
+    # FORBIDDEN BLOCKS
+    - bedrock 
+
+forbiddenBLocks:
+    - piston_head
+    - bedrock
+
+onlyMovePlayers: false
+moveEntities: true
+canDirectControl: false
+
+# How the craft moves
+canFly: false
+allowVerticalMovement: false
+canHover: false
+canHoverOverWater: false
+useGravity: true
+hoverLimit: 1
+speed: 2.0
+canCruise: true
+cruiseSpeed: 6.0
+cruiseSkipBlocks: 5
+fuelBurnRate: 0.3
+rotateAtMidpoint: false
+
+# Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
+detectionMultiplier: 8.0
+underwaterDetectionMultiplier: 8.0
+
+# How the craft acts when it crashes or sinks
+collisionExplosion: 0.0
+sinkPercent: 99.0
+overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
+keepMovingOnSink: true
+tryNudge: false
+
+flyblocks:
+    redstone_block:
+        - 10.0
+        - 100.0
+    "#anvil": # anvils are OP armor, so limit it
+        - 0.0
+        - 1.0
+    dispenser : # Limit on dispensers to prevent strong TNT cannons but allow more firepower than car
+        - 0.0
+        - N6
+    water: # so is water
+        - 0.0
+        - 1.0
+    coal_block: # Hard limit for all craft types on maximum torpedoes
+        - 0.0
+        - 5.0
+
+passthroughBlocks:
+    - grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf
+    - crimson_roots
+    - warped_roots
+
+
+harvestBlocks:
+    - "#saplings"
+    - "#crops"
+    - cobweb
+    - sweet_berry_bush
+    - brown_mushroom
+    - red_mushroom
+    - crimson_fungus
+    - warped_fungus
+    - sugar_cane
+    - "#carpets"
+    - "#buttons"
+    - torch
+    - wall_torch
+    - lever
+    - redstone_torch
+    - redstone_wall_torch
+    - "#signs"
+    - "#pressure_plates"
+    - tripwire_hook
+    - tripwire
+    - "#rails"
+    - repeater
+    - comparator
+    - redstone_wire
+    - "#walls"
+    - "#fences"
+    - "#fence_gates"
+    - "#beds"
+    - "#glass"
+    - "#trapdoors"
+
+harvesterBladeBlocks:
+    # BUILDING BLOCKS
+    - "#concrete"
+    - "#glass"
+    - "#logs"
+    - "#planks" 
+    - "#slabs"
+    - "#stairs"
+    - "#stone_bricks"
+    - "#terracotta"
+    - "#wool"
+    - bricks
+    - chiseled_quartz_block
+    - coal_block
+    - end_stone
+    - end_stone_bricks
+    - nether_brick
+    - quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - smooth_stone
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
+    - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - activator_rail
+    - comparator
+    - daylight_detector
+    - dispenser
+    - dropper
+    - hopper
+    - lever
+    - note_block
+    - observer
+    - piston
+    - piston_head
+    - redstone_block
+    - redstone_lamp
+    - redstone_torch
+    - redstone_wall_torch
+    - redstone_wire
+    - repeater
+    - sticky_piston
+    - target
+    - tripwire
+    - tripwire_hook
+    # DECORATIVE BLOCKS
+    - "#banners"
+    - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
+    - bell
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
+    - lantern
+    - torch
+    - wall_torch
+    # UTILITY BLOCKS
+    - "#anvil"
+    - "#beds"
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - "#walls"
+    - blast_furnace
+    - brewing_stand
+    - cartography_table
+    - cauldron
+    - fletching_table
+    - composter
+    - grindstone
+    - lectern
+    - loom
+    - smithing_table
+    - smoker
+    - stonecutter
+    - crafting_table
+    - enchanting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    - lava
+    - water
