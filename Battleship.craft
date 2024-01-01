@@ -1,125 +1,140 @@
 name: Battleship
 maxSize: 100000
 minSize: 10000
-allowedBlocks:
-    - "#planks"
-    - lava
-    - "#logs"
+allowedBlocks: 
+    # BUILDING BLOCKS
+    - "#concrete"
     - "#glass"
-    - lapis_block
-    - dispenser
-    - note_block
-    - "#beds"
-    - sticky_piston
-    - piston
-    - piston_head
-    - bedrock
-    - "#wool"
-    - gold_block
-    - iron_block
+    - "#logs"
+    - "#planks" 
     - "#slabs"
-    - bricks
-    - polished_deepslate
-    - bookshelf
-    - torch
-    - wall_torch
-    - fire
     - "#stairs"
-    - "#chests"
-    - redstone_wire
-    - diamond_block
-    - crafting_table
-    - furnace
-    - blast_furnace
-    - smoker
-    - "#signs"
-    - "#doors"
-    - ladder
-    - lever
-    - "#pressure_plates"
-    - redstone_torch
-    - redstone_wall_torch
-    - "#buttons"
-    - "#fences"
-    - glowstone
-    - cake
-    - repeater
-    - "#trapdoors"
     - "#stone_bricks"
-    - iron_bars
-    - "#fence_gates"
-    - nether_brick
-    - enchanting_table
-    - brewing_stand
-    - cauldron
-    - end_stone
-    - dragon_egg
-    - redstone_lamp
-    - ender_chest
-    - tripwire_hook
-    - tripwire
-    - emerald_block
-    - beacon
-    - "#walls"
-    - flower_pot
-    - "#heads"
-    - "#banners"
-    - "#anvil"
-    - comparator
-    - daylight_detector
-    - redstone_block
-    - hopper
-    - quartz_block
+    - "#terracotta"
+    - "#wool"
+    - bricks
     - chiseled_quartz_block
+    - coal_block
+    - end_stone
+    - end_stone_bricks
+    - nether_brick
+    - polished_deepslate
+    - quartz_block
     - quartz_pillar
     - smooth_quartz
-    - activator_rail
-    - dropper
-    - observer
-    - target
-    - jukebox
-    - chiseled_bookshelf
-    - lightning_rod
-    - "#terracotta"
-    - "#concrete"
-    - slime_block
-    - "#carpets"
-    - coal_block
-    - end_stone_bricks
     - smooth_stone
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
+    - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - activator_rail
+    - comparator
+    - daylight_detector
+    - dispenser
+    - dropper
+    - hopper
+    - lever
+    - note_block
+    - observer
+    - piston
+    - piston_head
+    - redstone_block
+    - redstone_lamp
+    - redstone_torch
+    - redstone_wall_torch
+    - redstone_wire
+    - repeater
+    - sticky_piston
+    - target
+    - tripwire
+    - tripwire_hook
+    # DECORATIVE BLOCKS
+    - "#banners"
+    - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
     - bell
-    - cartography_table
-    - composter
-    - fletching_table
-    - grindstone
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
     - lantern
+    - torch
+    - wall_torch
+    # UTILITY BLOCKS
+    - "#anvil"
+    - "#beds"
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - "#walls"
+    - blast_furnace
+    - brewing_stand
+    - cartography_table
+    - cauldron
+    - fletching_table
+    - composter
+    - grindstone
     - lectern
     - loom
     - smithing_table
+    - smoker
     - stonecutter
+    - crafting_table
+    - enchanting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    - lava
+    # FORBIDDEN BLOCKS
+    - bedrock 
+
+forbiddenBlocks:
+    - bedrock
 
 onlyMovePlayers: false
 moveEntities: true
 canDirectControl: false
-forbiddenBlocks:
-    - piston_head
-    - bedrock
 
-canCruise: true
-cruiseSkipBlocks: 18
+# How the craft moves
 canFly: false
-sinkPercent: 85.0
-overallSinkPercent: 80.0
-minHeightLimit: 50
-maxHeightLimit: 80
-requireWaterContact: true
 allowVerticalMovement: false
+maxHeightLimit: 80
+minHeightLimit: 50
+speed: 1.0
+canCruise: true
+cruiseSpeed: 8
+cruiseSkipBlocks: 63
 fuelBurnRate: 0.5
-speed: .5
-cruiseSpeed: 2.0
+rotateAtMidpoint: true
+requireWaterContact: true
+
+# Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
 detectionMultiplier: 10.0
 underwaterDetectionMultiplier: 10.0
+
+# How the craft acts when it crashes or sinks
+collisionExplosion: 0.0
+explodeOnCrash: 2.0
+sinkPercent: 85.0
+overallSinkPercent: 80.0
+keepMovingOnSink: true
 tryNudge: false
+
 flyblocks:
     "#planks":
         - 25.0
@@ -130,12 +145,9 @@ flyblocks:
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0
-    obsidian: # so is obsidian
+    coal_block: # Hard limit for all craft types on maximum torpedoes
         - 0.0
-        - 1.0
-    water: # so is water
-        - 0.0
-        - 1.0
+        - 5.0
 
 
 passthroughBlocks:

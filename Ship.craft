@@ -1,102 +1,124 @@
 name: Ship
 maxSize: 2000
 minSize: 10
-allowedBlocks:
-    - "#planks"
-    - "#logs"
+allowedBlocks: 
+    # BUILDING BLOCKS
+    - "#concrete"
     - "#glass"
+    - "#logs"
+    - "#planks" 
+    - "#wooden_slabs"
+    - "#wooden_stairs"
+    - "#terracotta"
+    - "#wool"
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
     - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - daylight_detector
+    - dropper
+    - hopper
+    - lever
     - note_block
-    - "#beds"
-    - sticky_piston
+    - observer
     - piston
     - piston_head
-    - "#wool"
-    - bedrock
-    - gold_block
-    - iron_block
-    - "#wooden_slabs"
-    - bookshelf
-    - torch
-    - wall_torch
-    - fire
-    - "#wooden_stairs"
-    - "#chests"
-    - redstone_wire
-    - diamond_block
-    - crafting_table
-    - furnace
-    - blast_furnace
-    - smoker
-    - "#signs"
-    - "#doors"
-    - ladder
-    - lever
-    - lightning_rod
-    - "#pressure_plates"
+    - redstone_block
+    - redstone_lamp
     - redstone_torch
     - redstone_wall_torch
-    - "#buttons"
-    - "#fences"
-    - glowstone
-    - cake
+    - redstone_wire
     - repeater
-    - "#trapdoors"
-    - iron_bars
-    - "#fence_gates"
-    - enchanting_table
-    - brewing_stand
-    - cauldron
-    - end_stone
-    - dragon_egg
-    - redstone_lamp
-    - ender_chest
-    - tripwire_hook
+    - sticky_piston
+    - target
     - tripwire
-    - emerald_block
-    - flower_pot
-    - "#heads"
+    - tripwire_hook
+    # DECORATIVE BLOCKS
     - "#banners"
-    - "#anvil"
-    - daylight_detector
-    - redstone_block
-    - hopper
-    - activator_rail
-    - dropper
-    - slime_block
     - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
     - bell
-    - cartography_table
-    - composter
-    - fletching_table
-    - grindstone
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
     - lantern
+    - torch
+    - wall_torch
+    # UTILITY BLOCKS
+    - "#anvil"
+    - "#beds"
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - "#walls"
+    - blast_furnace
+    - brewing_stand
+    - cartography_table
+    - cauldron
+    - fletching_table
+    - composter
+    - grindstone
     - lectern
     - loom
     - smithing_table
+    - smoker
     - stonecutter
+    - crafting_table
+    - enchanting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    - lava
+    # FORBIDDEN BLOCKS
+    - bedrock 
+forbiddenBlocks:
+    - bedrock
 
 onlyMovePlayers: false
 moveEntities: true
 canDirectControl: false
-forbiddenBlocks:
-    - piston_head
-    - bedrock
 
-canCruise: true
-cruiseSkipBlocks: 4
+# How the craft moves
 canFly: false
-sinkPercent: 99.0
-overallSinkPercent: 90.0
-minHeightLimit: 50
-maxHeightLimit: 80
-requireWaterContact: true
 allowVerticalMovement: false
-speed: 2.0
-cruiseSpeed: 4.0
+maxHeightLimit: 80
+minHeightLimit: 50
+speed: 4.0
+canCruise: true
+cruiseSpeed: 6.0
+cruiseSkipBlocks: 2
+fuelBurnRate: 0.0
+rotateAtMidpoint: true
+requireWaterContact: true
+
+# Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
 detectionMultiplier: 4.0
 underwaterDetectionMultiplier: 4.0
+
+# How the craft acts when it crashes or sinks
+collisionExplosion: 0.0
+explodeOnCrash: 2.0
+sinkPercent: 99.0
+overallSinkPercent: 80.0
+keepMovingOnSink: true
 tryNudge: false
+
 flyblocks:
     "#planks":
         - 50.0
@@ -121,6 +143,7 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
+    - water
     - grass
     - tall_grass
     - fern

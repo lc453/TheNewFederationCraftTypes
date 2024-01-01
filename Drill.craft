@@ -1,84 +1,118 @@
 name: Drill
 maxSize: 1000
 minSize: 10
-allowedBlocks:
-    - "#planks"
-    - "#logs"
+allowedBlocks: 
+    # BUILDING BLOCKS
+    - "#concrete"
     - "#glass"
-    - lapis_block
-    - bedrock
-    - "#wool"
-    - gold_block
-    - iron_block
+    - "#logs"
+    - "#planks" 
     - "#slabs"
-    - bricks
-    - torch
-    - wall_torch
-    - fire
     - "#stairs"
-    - "#chests"
-    - diamond_block
-    - crafting_table
-    - furnace
-    - "#signs"
-    - "#doors"
-    - ladder
-    - "#fences"
-    - "#trapdoors"
     - "#stone_bricks"
-    - iron_bars
-    - "#fence_gates"
-    - nether_brick
-    - dragon_egg
-    - ender_chest
-    - emerald_block
-    - beacon
-    - "#walls"
-    - flower_pot
-    - "#heads"
-    - "#banners"
-    - redstone_block
-    - quartz_block
+    - "#terracotta"
+    - "#wool"
+    - bricks
     - chiseled_quartz_block
+    - nether_brick
+    - quartz_block
     - quartz_pillar
     - smooth_quartz
-    - jukebox
-    - lightning_rod
-    - "#terracotta"
-    - "#concrete"
-    - slime_block
-    - "#carpets"
     - smooth_stone
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
+    - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - activator_rail
+    - comparator
+    - daylight_detector
+    - dropper
+    - hopper
+    - lever
+    - redstone_block
+    - redstone_lamp
+    - redstone_torch
+    - redstone_wall_torch
+    - redstone_wire
+    - repeater
+    - tripwire
+    - tripwire_hook
+    # DECORATIVE BLOCKS
+    - "#banners"
+    - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
+    - bell
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
     - lantern
+    - torch
+    - wall_torch
+    # UTILITY BLOCKS
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - "#walls"
+    - blast_furnace
     - stonecutter
+    - crafting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    # FORBIDDEN BLOCKS
 
-canCruise: true
-canFly: false
-sinkPercent: 99.0
-overallSinkPercent: 99.0
-detectionMultiplier: 4.0
-underwaterDetectionMultiplier: 4.0
+onlyMovePlayers: false
+moveEntities: true
+canDirectControl: false
+
+# How the craft moves
+canFly: true
 allowVerticalMovement: false
 canHover: false
 canHoverOverWater: true
 useGravity: false
 hoverLimit: 1
-onlyMovePlayers: false
-moveEntities: true
-canDirectControl: false
-forbiddenBLocks:
-    - piston_head
-
-fuelBurnRate: 1
 speed: 0.25
+canCruise: true
 cruiseSpeed: 0.25
+cruiseSkipBlocks: 0
+fuelBurnRate: 1.0
+rotateAtMidpoint: false
+
+# Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
+detectionMultiplier: 4.0
+underwaterDetectionMultiplier: 4.0
+
+# How the craft acts when it crashes or sinks
+collisionExplosion: 0.0
+sinkPercent: 99.0
+overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
+keepMovingOnSink: true
 tryNudge: false
+
 flyblocks:
     diamond_block:
         - 25.0
         - 100.0
 
 passthroughBlocks:
+    - "#rails"
     - kelp_plant
     - seagrass
     - kelp
@@ -95,6 +129,9 @@ passthroughBlocks:
     - water
     - lava
     - glow_lichen
+    - torch
+    - wall_torch
+    - lantern
 
 harvestBlocks:
     - "#saplings"
@@ -173,10 +210,13 @@ harvestBlocks:
     - coal_ore
     - deepslate_coal_ore
     - iron_ore
+    - raw_iron_block
     - deepslate_iron_ore
     - copper_ore
     - deepslate_copper_ore
+    - raw_copper_block
     - gold_ore
+    - raw_gold_block
     - deepslate_gold_ore
     - redstone_ore
     - deepslate_redstone_ore
@@ -192,39 +232,145 @@ harvestBlocks:
     - "#fences"
     - "#fence_gates"
     - "#walls"
-
-
-harvesterBladeBlocks:
-    - "#planks"
-    - "#logs"
+    - obsidian
+    # all blocks allowed on airships so drills can clean up
+    - "#concrete"
     - "#glass"
-    - lapis_block
-    - bedrock
-    - "#wool"
-    - gold_block
-    - iron_block
+    - "#logs"
+    - "#planks" 
     - "#slabs"
-    - bricks
-    - fire
     - "#stairs"
-    - "#chests"
-    - diamond_block
-    - "#fences"
     - "#stone_bricks"
-    - iron_bars
-    - "#fence_gates"
-    - nether_brick
-    - ender_chest
-    - emerald_block
-    - beacon
-    - "#walls"
-    - "#heads"
-    - redstone_block
-    - quartz_block
+    - "#terracotta"
+    - "#wool"
+    - bricks
     - chiseled_quartz_block
+    - coal_block
+    - end_stone
+    - end_stone_bricks
+    - nether_brick
+    - polished_deepslate
+    - quartz_block
     - quartz_pillar
     - smooth_quartz
-    - "#terracotta"
-    - "#concrete"
     - smooth_stone
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
+    - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - activator_rail
+    - comparator
+    - daylight_detector
+    - dispenser
+    - dropper
+    - hopper
+    - lever
+    - note_block
+    - observer
+    - piston
+    - piston_head
+    - redstone_block
+    - redstone_lamp
+    - redstone_torch
+    - redstone_wall_torch
+    - redstone_wire
+    - repeater
+    - sticky_piston
+    - target
+    - tripwire
+    - tripwire_hook
+    # DECORATIVE BLOCKS
+    - "#banners"
+    - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
+    - bell
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
+    # UTILITY BLOCKS
+    - "#anvil"
+    - "#beds"
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - "#walls"
+    - blast_furnace
+    - brewing_stand
+    - cartography_table
+    - cauldron
+    - fletching_table
+    - composter
+    - grindstone
+    - lectern
+    - loom
+    - smithing_table
+    - smoker
     - stonecutter
+    - crafting_table
+    - enchanting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+
+harvesterBladeBlocks:
+    # BUILDING BLOCKS
+    - "#concrete"
+    - "#glass"
+    - "#logs"
+    - "#planks" 
+    - "#slabs"
+    - "#stairs"
+    - "#stone_bricks"
+    - "#terracotta"
+    - "#wool"
+    - bricks
+    - chiseled_quartz_block
+    - nether_brick
+    - quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - smooth_stone
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - iron_block
+    - lapis_block
+    # REDSTONE
+    - dropper
+    - hopper
+    - redstone_block
+    - redstone_lamp
+    # DECORATIVE BLOCKS
+    - bookshelf
+    - chiseled_bookshelf
+    - fire
+    - glowstone
+    # UTILITY BLOCKS
+    - "#fences"
+    - "#walls"
+    - blast_furnace
+    - stonecutter
+    - crafting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    # FORBIDDEN BLOCKS

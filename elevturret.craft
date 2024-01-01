@@ -1,33 +1,27 @@
-name: LightCruiser
-maxSize: 5000
-minSize: 1000
+name: ElevTurret
+maxSize: 1000
+minSize: 1
 allowedBlocks: 
     # BUILDING BLOCKS
-    - "#concrete"
     - "#glass"
     - "#logs"
     - "#planks" 
     - "#slabs"
-    - "#stairs"
-    - "#stone_bricks"
-    - "#terracotta"
-    - "#wool"
-    - bricks
-    - chiseled_quartz_block
-    - coal_block
+    - "#wooden_stairs"
+    - gray_terracotta
+    - light_gray_terracotta
+    - black_terracotta
+    - gray_concrete
+    - light_gray_concrete
+    - black_concrete
+    - light_gray_wool
     - end_stone
     - end_stone_bricks
-    - nether_brick
-    - polished_deepslate
-    - quartz_block
-    - quartz_pillar
-    - smooth_quartz
-    - smooth_stone
+    - nether_brick_stairs
     - diamond_block
     - emerald_block
     - gold_block
     - iron_bars
-    - iron_block
     - lapis_block
     # REDSTONE
     - "#buttons"
@@ -45,8 +39,6 @@ allowedBlocks:
     - piston_head
     - redstone_block
     - redstone_lamp
-    - redstone_torch
-    - redstone_wall_torch
     - redstone_wire
     - repeater
     - sticky_piston
@@ -79,7 +71,6 @@ allowedBlocks:
     - "#fence_gates"
     - "#fences"
     - "#trapdoors"
-    - "#walls"
     - blast_furnace
     - brewing_stand
     - cartography_table
@@ -100,28 +91,21 @@ allowedBlocks:
     - lightning_rod
     - slime_block
     - lava
+    - water
     # FORBIDDEN BLOCKS
     - bedrock 
 
-forbiddenBlocks:
-    - bedrock
-    
 onlyMovePlayers: false
 moveEntities: true
 canDirectControl: false
 
 # How the craft moves
-canFly: false
-allowVerticalMovement: false
-maxHeightLimit: 80
-minHeightLimit: 50
-speed: 1.5
-canCruise: true
-cruiseSpeed: 6.0
-cruiseSkipBlocks: 23
-fuelBurnRate: 0.1
-rotateAtMidpoint: true
-requireWaterContact: true
+canFly: true
+allowHorizontalMovement: false
+allowVerticalMovement: true
+speed: 1.0
+canCruise: false
+rotateAtMidpoint: false
 
 # Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
 detectionMultiplier: 10.0
@@ -129,38 +113,8 @@ underwaterDetectionMultiplier: 10.0
 
 # How the craft acts when it crashes or sinks
 collisionExplosion: 0.0
-explodeOnCrash: 2.0
-sinkPercent: 90.0
-overallSinkPercent: 80.0
-keepMovingOnSink: true
+explodeOnCrash: 4.0
+sinkPercent: 99.0
+overallSinkPercent: 99.0
+keepMovingOnSink: false
 tryNudge: false
-
-flyblocks:
-    "#planks":
-        - 25.0
-        - 100.0
-    [crimson_planks, warped_planks]:
-        - 0.0
-        - 10.0
-    "#anvil": # anvils are OP armor, so limit it
-        - 0.0
-        - 1.0
-    coal_block: # Hard limit for all craft types on maximum torpedoes
-        - 0.0
-        - 5.0
-
-passthroughBlocks:
-    - kelp_plant
-    - seagrass
-    - kelp
-    - tall_seagrass
-    - bubble_column
-    - water
-    - grass
-    - tall_grass
-    - fern
-    - large_fern
-    - "#flowers"
-    - dead_bush
-    - small_dripleaf
-    - big_dripleaf

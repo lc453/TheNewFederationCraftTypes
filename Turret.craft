@@ -1,86 +1,118 @@
 name: Turret
 maxSize: 1000
 minSize: 1
-allowedBlocks:
-    - water
-    - lava
-    - "#logs"
+allowedBlocks: 
+    # BUILDING BLOCKS
     - "#glass"
-    - dispenser
-    - note_block
-    - "#beds"
-    - sticky_piston
-    - piston
-    - piston_head
-    - light_gray_wool
-    - gold_block
+    - "#logs"
+    - "#planks" 
     - "#slabs"
-    - bookshelf
-    - torch
-    - wall_torch
     - "#wooden_stairs"
-    - nether_brick_stairs
-    - "#chests"
-    - redstone_wire
-    - diamond_block
-    - crafting_table
-    - furnace
-    - blast_furnace
-    - smoker
-    - "#signs"
-    - "#doors"
-    - ladder
-    - lever
-    - "#pressure_plates"
-    - "#buttons"
-    - "#fences"
-    - glowstone
-    - cake
-    - repeater
-    - "#wooden_trapdoors"
-    - iron_bars
-    - "#fence_gates"
-    - brewing_stand
-    - cauldron
-    - redstone_lamp
-    - ender_chest
-    - tripwire_hook
-    - tripwire
-    - emerald_block
-    - beacon
-    - flower_pot
-    - "#heads"
-    - "#banners"
-    - "#anvil"
-    - comparator
-    - daylight_detector
-    - redstone_block
-    - hopper
-    - activator_rail
-    - dropper
-    - observer
-    - target
-    - jukebox
-    - chiseled_bookshelf
     - gray_terracotta
     - light_gray_terracotta
     - black_terracotta
     - gray_concrete
     - light_gray_concrete
     - black_concrete
-    - slime_block
-    - "#carpets"
+    - light_gray_wool
+    - end_stone
     - end_stone_bricks
+    - nether_brick_stairs
+    - diamond_block
+    - emerald_block
+    - gold_block
+    - iron_bars
+    - lapis_block
+    # REDSTONE
+    - "#buttons"
+    - "#pressure_plates"
+    - activator_rail
+    - comparator
+    - daylight_detector
+    - dispenser
+    - dropper
+    - hopper
+    - lever
+    - note_block
+    - observer
+    - piston
+    - piston_head
+    - redstone_block
+    - redstone_lamp
+    - redstone_wire
+    - repeater
+    - sticky_piston
+    - target
+    - tripwire
+    - tripwire_hook
+    # DECORATIVE BLOCKS
+    - "#banners"
+    - "#carpets"
+    - "#heads"
+    - "#signs"
+    - beacon
+    - bell
+    - bookshelf
+    - cake
+    - chiseled_bookshelf
+    - dragon_egg
+    - fire
+    - flower_pot
+    - glowstone
+    - jukebox
+    - lantern
+    - torch
+    - wall_torch
+    # UTILITY BLOCKS
+    - "#anvil"
+    - "#beds"
+    - "#chests"
+    - "#doors"
+    - "#fence_gates"
+    - "#fences"
+    - "#trapdoors"
+    - blast_furnace
+    - brewing_stand
+    - cartography_table
+    - cauldron
+    - fletching_table
+    - composter
+    - grindstone
+    - lectern
+    - loom
+    - smithing_table
+    - smoker
+    - stonecutter
+    - crafting_table
+    - enchanting_table
+    - ender_chest
+    - furnace
+    - ladder
+    - lightning_rod
+    - slime_block
+    - lava
+    - water
+    # FORBIDDEN BLOCKS
+    - bedrock 
 
+canDirectControl: false
+
+# How the craft moves
 canFly: true
-canCruise: false
-maxHeightLimit: 144
-collisionExplosion: 0.0
-explodeOnCrash: 2.0
 allowHorizontalMovement: false
 allowVerticalMovement: false
 speed: 1.0
-tryNudge: false
-overallSinkPercent: 99.0
+canCruise: false
+rotateAtMidpoint: false
+
+# Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
 detectionMultiplier: 10.0
-underwaterDetectionMultiplier: 1.0
+underwaterDetectionMultiplier: 10.0
+
+# How the craft acts when it crashes or sinks
+collisionExplosion: 0.0
+explodeOnCrash: 4.0
+sinkPercent: 99.0
+overallSinkPercent: 99.0
+keepMovingOnSink: false
+tryNudge: false
