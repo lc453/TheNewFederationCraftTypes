@@ -15,7 +15,7 @@ allowedBlocks:
     - bricks
     - chiseled_quartz_block
     - coal_block
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -51,10 +51,11 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
@@ -62,7 +63,6 @@ allowedBlocks:
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -80,7 +80,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -106,7 +106,7 @@ forbiddenBlocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: false
@@ -127,6 +127,7 @@ detectionMultiplier: 4.0
 underwaterDetectionMultiplier: 4.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 sinkPercent: 99.0
 overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
@@ -140,6 +141,9 @@ flyblocks:
     dispenser:
         - 0.0
         - N2
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - N2
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0
@@ -151,7 +155,7 @@ flyblocks:
         - 5.0
 
 passthroughBlocks:
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern
@@ -200,7 +204,7 @@ harvesterBladeBlocks:
     - bricks
     - chiseled_quartz_block
     - coal_block
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -265,7 +269,7 @@ harvesterBladeBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone

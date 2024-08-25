@@ -16,8 +16,6 @@ allowedBlocks:
     - black_concrete
     - light_gray_wool
     - coal_block
-    - end_stone
-    - end_stone_bricks
     - nether_brick_stairs
     - diamond_block
     - emerald_block
@@ -47,10 +45,11 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
@@ -58,7 +57,6 @@ allowedBlocks:
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -75,7 +73,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -104,7 +102,7 @@ passthroughBlocks:
     - water
     - lava
 
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: true
@@ -113,6 +111,7 @@ allowVerticalMovement: false
 speed: 1.0
 canCruise: false
 rotateAtMidpoint: false
+moveEntities: false
 
 # Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
 detectionMultiplier: 10.0

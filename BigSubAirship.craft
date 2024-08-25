@@ -1,6 +1,6 @@
-name: LightCruiser
-maxSize: 5000
-minSize: 1000
+name: BigSubAirship
+maxSize: 40000
+minSize: 5000
 allowedBlocks: 
     # BUILDING BLOCKS
     - "#concrete"
@@ -29,6 +29,7 @@ allowedBlocks:
     - iron_bars
     - iron_block
     - lapis_block
+    - obsidian
     # REDSTONE
     - "#buttons"
     - "#pressure_plates"
@@ -106,27 +107,28 @@ allowedBlocks:
 
 forbiddenBlocks:
     - bedrock
-    
+
 onlyMovePlayers: false
 moveEntities: true
 canDirectControl: true
 
 # How the craft moves
-canFly: false
-allowVerticalMovement: false
-maxHeightLimit: 80
-minHeightLimit: 50
-speed: 1.5
+canFly: true
+maxHeightLimit: 256
+maxHeightAboveGround: 200
+speed: 1.15
 canCruise: true
 cruiseSpeed: 8.0
-cruiseSkipBlocks: 15
-fuelBurnRate: 0.1
+cruiseSkipBlocks: 34
+vertCruiseSpeed: 0.75
+vertCruiseSkipBlocks: 0
+fuelBurnRate: 0.45
 rotateAtMidpoint: true
-requireWaterContact: true
+halfSpeedUnderwater: true
 
 # Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)
-detectionMultiplier: 10.0
-underwaterDetectionMultiplier: 10.0
+detectionMultiplier: 12.0
+underwaterDetectionMultiplier: 1.0
 
 # How the craft acts when it crashes or sinks
 collisionSound: block.amethyst_block.break
@@ -138,28 +140,35 @@ keepMovingOnSink: false
 tryNudge: false
 
 # Dynamic speed
-dynamicLagSpeedFactor: 0.22
-dynamicLagPowerFactor: 0.92
+dynamicLagSpeedFactor: .20
+dynamicLagPowerFactor: 0.73
 dynamicLagMinSpeed: 3
 gearShifts: 4
 gearShiftsAffectTickCoolDown: true
 
-flyblocks:
-    ["#planks", "#logs_that_burn"]:
-        - 25.0
+moveblocks:
+    redstone_block: # redstone represents engines
+        - 1.0
         - 100.0
-    [crimson_planks, warped_planks]:
-        - 0.0
+    iron_block: # iron represents ballast tanks
         - 10.0
-    "#chests": # limit chests to make big ships important for merchant missions
+        - 100.0
+flyblocks:
+    "#wool": #wool represents lift
+        - 50.0
+        - 100.0
+    "#chests": # limit chests to make big airships important for merchant missions, nerf sub capacity
         - 0.0
-        - 2.0
+        - 0.5
     [dispenser,hopper,dropper]: # dispensers and hoppers can be used for inventory too, so limit them as well
         - 0.0
         - 2.0
     furnace: # No furnaces for cargo
         - 0.0
-        - N25
+        - N50
+    obsidian: # obsidian is strong armor
+        - 0.0
+        - 1.0
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0

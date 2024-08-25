@@ -1,0 +1,127 @@
+name: RammingSkiff
+maxSize: 500
+minSize: 10
+allowedBlocks:
+    - "#planks"
+    - water
+    - lava
+    - "#logs"
+    - "#glass"
+    - dispenser
+    - note_block
+    - "#beds"
+    - sticky_piston
+    - piston
+    - piston_head
+    - sticky_piston
+    - piston
+    - bedrock
+    - "#wool"
+    - gold_block
+    - "#slabs"
+    - bookshelf
+    - torch
+    - wall_torch
+    - fire
+    - "#stairs"
+    - "#chests"
+    - redstone_wire
+    - diamond_block
+    - crafting_table
+    - furnace
+    - blast_furnace
+    - smoker
+    - "#signs"
+    - "#doors"
+    - ladder
+    - lever
+    - lightning_rod
+    - "#pressure_plates"
+    - redstone_torch
+    - redstone_wall_torch
+    - "#buttons"
+    - "#fences"
+    - cake
+    - repeater
+    - "#trapdoors"
+    - iron_bars
+    - "#fence_gates"
+    - brewing_stand
+    - "#cauldrons"
+    - redstone_lamp
+    - ender_chest
+    - tripwire_hook
+    - tripwire
+    - emerald_block
+    - beacon
+    - flower_pot
+    - "#heads"
+    - "#banners"
+    - "#anvil"
+    - comparator
+    - daylight_detector
+    - redstone_block
+    - hopper
+    - activator_rail
+    - slime_block
+    - coal_block
+    - smooth_stone
+    - bell
+    - cartography_table
+    - composter
+    - fletching_table
+    - grindstone
+    - lantern
+    - lectern
+    - loom
+    - smithing_table
+    - stonecutter
+
+onlyMovePlayers: true
+moveEntities: true
+canDirectControl: true
+forbiddenBlocks:
+    - piston_head
+    - bedrock
+
+canFly: true
+allowVerticalMovement: false
+rotateAtMidpoint: true
+canCruise: true
+cruiseSpeed: 8
+cruiseSkipBlocks: 4
+maxHeightLimit: 130
+collisionExplosion: 0.75
+fuelBurnRate: 0.01
+explodeOnCrash: 2.0
+sinkSpeed: 3.0
+overallSinkPercent: 99.0
+sinkPercent: 99.0
+detectionMultiplier: 500.0
+underwaterDetectionMultiplier: 10.0
+smokeOnSink: 1
+keepMovingOnSink: true
+speed: 0.0
+tryNudge: false
+flyblocks:
+    "#wool": #wool represents lift
+        - 50.0
+        - 100.0
+    dispenser : # Limit airskiff weapons to two dispensers and four torpedo blocks
+        - 0.0
+        - N2
+    coal_block :
+        - 0.0
+        - N4
+    redstone_block: # redstone represents engines
+        - 8.0
+        - 100.0
+    "#anvil": # anvils are OP armor, so limit it
+        - 0.0
+        - 1.0
+    obsidian: # so is obsidian
+        - 0.0
+        - 1.0
+    water: # so is water
+        - 0.0
+        - 1.0

@@ -17,7 +17,7 @@ allowedBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -52,10 +52,11 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
@@ -81,7 +82,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -105,7 +106,7 @@ forbiddenBlocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 forbiddenSignStrings: ["ship","frigate","lightcruiser"]
 
 # How the craft moves
@@ -113,10 +114,10 @@ canFly: false
 allowVerticalMovement: true
 maxHeightLimit: 67
 minHeightLimit: 10
-speed: 1.0
+speed: 2
 canCruise: true
-cruiseSpeed: 2.0
-cruiseSkipBlocks: 4
+cruiseSpeed: 3.0
+cruiseSkipBlocks: 2
 fuelBurnRate: 0.3
 rotateAtMidpoint: true
 requireWaterContact: true
@@ -126,17 +127,21 @@ detectionMultiplier: 30.0
 underwaterDetectionMultiplier: 10.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 99.0
 overallSinkPercent: 99.0
-keepMovingOnSink: true
+keepMovingOnSink: false
 tryNudge: false
 
 flyblocks:
     ["#planks"]:
         - 50.0
         - 100.0
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - N2
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0

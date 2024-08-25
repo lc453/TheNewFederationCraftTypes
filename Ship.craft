@@ -39,10 +39,11 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
@@ -50,7 +51,6 @@ allowedBlocks:
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -68,7 +68,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -92,7 +92,7 @@ forbiddenBlocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: false
@@ -112,20 +112,24 @@ detectionMultiplier: 4.0
 underwaterDetectionMultiplier: 4.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 99.0
 overallSinkPercent: 80.0
-keepMovingOnSink: true
+keepMovingOnSink: false
 tryNudge: false
 
 flyblocks:
-    "#planks":
+    ["#planks", "#logs_that_burn"]:
         - 50.0
         - 100.0
     [crimson_planks, warped_planks]:
         - 0.0
         - 10.0
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - N4
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0
@@ -144,7 +148,7 @@ passthroughBlocks:
     - tall_seagrass
     - bubble_column
     - water
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern

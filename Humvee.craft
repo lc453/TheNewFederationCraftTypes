@@ -17,7 +17,7 @@ allowedBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -53,18 +53,19 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -82,7 +83,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -109,7 +110,7 @@ forbiddenBLocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: false
@@ -121,7 +122,7 @@ hoverLimit: 1
 speed: 2.0
 canCruise: true
 cruiseSpeed: 6.0
-cruiseSkipBlocks: 5
+cruiseSkipBlocks: 4
 fuelBurnRate: 0.3
 rotateAtMidpoint: false
 
@@ -130,10 +131,11 @@ detectionMultiplier: 8.0
 underwaterDetectionMultiplier: 8.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 sinkPercent: 99.0
 overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
-keepMovingOnSink: true
+keepMovingOnSink: false
 tryNudge: false
 
 flyblocks:
@@ -146,6 +148,9 @@ flyblocks:
     dispenser : # Limit on dispensers to prevent strong TNT cannons but allow more firepower than car
         - 0.0
         - N6
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - N4
     water: # so is water
         - 0.0
         - 1.0
@@ -154,7 +159,8 @@ flyblocks:
         - 5.0
 
 passthroughBlocks:
-    - grass
+    - "#leaves"
+    - short_grass
     - tall_grass
     - fern
     - large_fern
@@ -214,7 +220,7 @@ harvesterBladeBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -250,18 +256,19 @@ harvesterBladeBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -279,7 +286,7 @@ harvesterBladeBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone

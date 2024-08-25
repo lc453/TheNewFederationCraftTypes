@@ -32,7 +32,7 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern

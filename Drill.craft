@@ -14,7 +14,7 @@ allowedBlocks:
     - "#wool"
     - bricks
     - chiseled_quartz_block
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -43,18 +43,19 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -79,7 +80,7 @@ allowedBlocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: true
@@ -103,7 +104,7 @@ underwaterDetectionMultiplier: 4.0
 collisionExplosion: 0.0
 sinkPercent: 99.0
 overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
-keepMovingOnSink: true
+keepMovingOnSink: false
 tryNudge: false
 
 flyblocks:
@@ -118,7 +119,7 @@ passthroughBlocks:
     - kelp
     - tall_seagrass
     - bubble_column
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern
@@ -153,7 +154,7 @@ harvestBlocks:
     - lever
     - redstone_torch
     - redstone_wall_torch
-    - "#signs"
+    - "#all_signs"
     - "#pressure_plates"
     - tripwire_hook
     - tripwire
@@ -248,7 +249,7 @@ harvestBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
-    - nether_brick
+    - nether_bricks
     - polished_deepslate
     - quartz_block
     - quartz_pillar
@@ -293,10 +294,11 @@ harvestBlocks:
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
+    - "#flower_pots"
     - glowstone
     - jukebox
     # UTILITY BLOCKS
@@ -311,7 +313,7 @@ harvestBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -341,7 +343,7 @@ harvesterBladeBlocks:
     - "#wool"
     - bricks
     - chiseled_quartz_block
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz

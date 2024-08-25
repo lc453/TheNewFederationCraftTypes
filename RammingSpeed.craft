@@ -1,0 +1,151 @@
+name: RammingSpeed
+maxSize: 5000
+minSize: 1000
+allowedBlocks: 
+    - "#planks"
+    - water
+    - lava
+    - "#logs"
+    - "#glass"
+    - lapis_block
+    - dispenser
+    - note_block
+    - "#beds"
+    - sticky_piston
+    - piston
+    - piston_head
+    - bedrock
+    - "#wool"
+    - gold_block
+    - iron_block
+    - "#slabs"
+    - bricks
+    - polished_deepslate
+    - bookshelf
+    - torch
+    - wall_torch
+    - fire
+    - "#stairs"
+    - "#chests"
+    - redstone_wire
+    - diamond_block
+    - crafting_table
+    - furnace
+    - blast_furnace
+    - smoker
+    - "#signs"
+    - "#doors"
+    - ladder
+    - lever
+    - "#pressure_plates"
+    - redstone_torch
+    - redstone_wall_torch
+    - "#buttons"
+    - "#fences"
+    - glowstone
+    - cake
+    - chain
+    - repeater
+    - "#trapdoors"
+    - "#stone_bricks"
+    - iron_bars
+    - "#fence_gates"
+    - nether_bricks
+    - enchanting_table
+    - brewing_stand
+    - "#cauldrons"
+    - end_stone
+    - dragon_egg
+    - redstone_lamp
+    - ender_chest
+    - tripwire_hook
+    - tripwire
+    - emerald_block
+    - beacon
+    - "#walls"
+    - flower_pot
+    - "#heads"
+    - "#banners"
+    - "#anvil"
+    - comparator
+    - daylight_detector
+    - redstone_block
+    - hopper
+    - quartz_block
+    - chiseled_quartz_block
+    - quartz_pillar
+    - smooth_quartz
+    - activator_rail
+    - dropper
+    - observer
+    - target
+    - jukebox
+    - chiseled_bookshelf
+    - lightning_rod
+    - "#terracotta"
+    - "#concrete"
+    - slime_block
+    - "#carpets"
+    - coal_block
+    - end_stone_bricks
+    - smooth_stone
+    - bell
+    - cartography_table
+    - composter
+    - fletching_table
+    - grindstone
+    - lantern
+    - lectern
+    - loom
+    - smithing_table
+    - stonecutter
+onlyMovePlayers: false
+moveEntities: true
+canDirectControl: true
+forbiddenBlocks:
+    - piston_head
+    - bedrock
+
+canCruise: true
+rotateAtMidpoint: true
+canFly: true
+allowVerticalMovement: false
+maxHeightLimit: 140
+collisionExplosion: .15
+focusedExplosion: true
+detectionMultiplier: 100.0
+underwaterDetectionMultiplier: 10.0
+speed: 0.0
+cruiseSkipBlocks: 5
+cruiseSpeed: 6.0
+fuelBurnRate: 0.1
+sinkPercent: 95.0
+overallSinkPercent: 90.0
+tryNudge: false
+moveblocks:
+    redstone_block: # redstone represents engines
+        - 1.0
+        - 100.0
+flyblocks:
+    "#wool": #wool represents lift
+        - 50.0
+        - 100.0
+    "#anvil": # anvils are OP armor, so limit it
+        - 0.0
+        - 1.0
+    obsidian: # so is obsidian
+        - 0.0
+        - 1.0
+    water: # so is water
+        - 0.0
+        - 1.0
+
+passthroughBlocks:
+    - short_grass
+    - tall_grass
+    - fern
+    - large_fern
+    - "#flowers"
+    - dead_bush
+    - small_dripleaf
+    - big_dripleaf

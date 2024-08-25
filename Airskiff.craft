@@ -1,5 +1,5 @@
 name: Airskiff
-maxSize: 80
+maxSize: 100
 minSize: 10
 allowedBlocks: 
     # BUILDING BLOCKS
@@ -41,10 +41,11 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
@@ -52,7 +53,6 @@ allowedBlocks:
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - jukebox
     - lantern
     - torch
@@ -69,7 +69,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -93,16 +93,16 @@ forbiddenBlocks:
 
 onlyMovePlayers: true
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: true
 maxHeightLimit: 216
 maxHeightAboveGround: 100
-speed: 4.0
+speed: 3.0
 canCruise: true
-cruiseSpeed: 5.0
-cruiseSkipBlocks: 1
+cruiseSpeed: 4.0
+cruiseSkipBlocks: 2
 fuelBurnRate: 0.01
 rotateAtMidpoint: true
 
@@ -111,6 +111,7 @@ detectionMultiplier: 50.0
 underwaterDetectionMultiplier: 1.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 99.0
@@ -119,16 +120,26 @@ keepMovingOnSink: true
 sinkSpeed: 3.0
 tryNudge: false
 
+# Dynamic speed
+dynamicFlyBlock: 
+    - "#wool"
+    - redstone_block
+dynamicFlyBlockSpeedFactor: 5
+gearShifts: 4
+
 flyblocks:
     "#wool": #wool represents lift
         - 50.0
         - 100.0
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - N2
     dispenser : # Limit airskiff weapons to three dispensers and six torpedo blocks
         - 0.0
         - N3
     coal_block :
         - 0.0
-        - N6
+        - N4
     redstone_block: # redstone represents engines
         - 8.0
         - 100.0
@@ -143,7 +154,7 @@ flyblocks:
         - 1.0
 
 passthroughBlocks:
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern

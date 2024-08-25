@@ -17,7 +17,7 @@ allowedBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -53,18 +53,19 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -82,7 +83,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -109,7 +110,7 @@ forbiddenBLocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: false
@@ -130,16 +131,26 @@ detectionMultiplier: 8.0
 underwaterDetectionMultiplier: 8.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 sinkPercent: 99.0
 overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
-keepMovingOnSink: true
+keepMovingOnSink: false
 tryNudge: false
 
 flyblocks:
     redstone_block:
         - 10.0
         - 100.0
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - 2.0
+    [dispenser,hopper,dropper]: # dispensers and hoppers can be used for inventory too, so limit them as well
+        - 0.0
+        - 2.0
+    furnace: # No furnaces for cargo
+        - 0.0
+        - N25
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0
@@ -151,7 +162,7 @@ flyblocks:
         - 5.0
 
 passthroughBlocks:
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern
@@ -166,6 +177,8 @@ passthroughBlocks:
 harvestBlocks:
     - "#saplings"
     - "#crops"
+    - "#leaves"
+    - "#logs"
     - cobweb
     - sweet_berry_bush
     - brown_mushroom
@@ -211,7 +224,7 @@ harvesterBladeBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
-    - nether_brick
+    - nether_bricks
     - quartz_block
     - quartz_pillar
     - smooth_quartz
@@ -247,18 +260,19 @@ harvesterBladeBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
-    - flower_pot
     - glowstone
     - jukebox
     - lantern
@@ -276,7 +290,7 @@ harvesterBladeBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone

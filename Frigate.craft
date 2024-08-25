@@ -43,14 +43,16 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
@@ -72,7 +74,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -97,7 +99,7 @@ forbiddenBlocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: false
@@ -107,7 +109,7 @@ minHeightLimit: 50
 speed: 2
 canCruise: true
 cruiseSpeed: 6
-cruiseSkipBlocks: 5
+cruiseSkipBlocks: 15
 fuelBurnRate: 0.0
 rotateAtMidpoint: true
 requireWaterContact: true
@@ -117,20 +119,30 @@ detectionMultiplier: 8.0
 underwaterDetectionMultiplier: 8.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 95.0
 overallSinkPercent: 80.0
-keepMovingOnSink: true
+keepMovingOnSink: false
 tryNudge: false
 
 flyblocks:
-    "#planks":
+    ["#planks", "#logs_that_burn"]:
         - 25.0
         - 100.0
     [crimson_planks, warped_planks]: #nether planks are OP because they don't burn
         - 0.0
         - 10.0
+    "#chests": # limit chests to make big airships important for merchant missions
+        - 0.0
+        - 2.0
+    [dispenser,hopper,dropper]: # dispensers and hoppers can be used for inventory too, so limit them as well
+        - 0.0
+        - 2.0
+    furnace: # No furnaces for cargo
+        - 0.0
+        - N25
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0
@@ -146,7 +158,7 @@ passthroughBlocks:
     - tall_seagrass
     - bubble_column
     - water
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern

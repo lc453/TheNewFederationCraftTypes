@@ -10,14 +10,13 @@ allowedBlocks:
     - "#slabs"
     - "#stairs"
     - "#wool"
-    - nether_brick
+    - nether_bricks
     - polished_deepslate
     - smooth_stone
     - diamond_block
     - emerald_block
     - gold_block
     - iron_bars
-    - iron_block
     - lapis_block
     # REDSTONE
     - "#buttons"
@@ -44,14 +43,16 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
     - cake
+    - chain
     - chiseled_bookshelf
     - dragon_egg
     - fire
@@ -73,7 +74,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -95,7 +96,7 @@ allowedBlocks:
     
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: true
@@ -112,6 +113,7 @@ detectionMultiplier: 10.0
 underwaterDetectionMultiplier: 10.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 0.0
 sinkPercent: 99.0
@@ -120,7 +122,7 @@ keepMovingOnSink: false
 tryNudge: false
 
 passthroughBlocks:
-    - grass
+    - short_grass
     - tall_grass
     - fern
     - large_fern
