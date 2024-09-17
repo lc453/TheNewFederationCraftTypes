@@ -112,6 +112,6 @@ underwaterDetectionMultiplier: 10.0
 collisionExplosion: 0.0
 explodeOnCrash: 4.0
 sinkPercent: 99.0
-overallSinkPercent: 99.0
+overallSinkPercent: 75.0
 keepMovingOnSink: false
 tryNudge: false

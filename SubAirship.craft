@@ -106,6 +106,8 @@ allowedBlocks:
 
 forbiddenBlocks:
     - bedrock
+forbiddenSignStrings:
+    - launchSAM
 
 onlyMovePlayers: false
 moveEntities: true
@@ -138,7 +140,7 @@ collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 95.0
-overallSinkPercent: 80.0
+overallSinkPercent: 60.0
 keepMovingOnSink: false
 tryNudge: false
 
