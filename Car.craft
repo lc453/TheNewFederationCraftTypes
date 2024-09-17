@@ -129,8 +129,8 @@ underwaterDetectionMultiplier: 4.0
 # How the craft acts when it crashes or sinks
 collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
-sinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
-overallSinkPercent: 75
+sinkPercent: 99.0
+overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
 keepMovingOnSink: true
 tryNudge: false
 

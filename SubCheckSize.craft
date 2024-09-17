@@ -32,7 +32,7 @@ allowedBlocks:
     - furnace
     - blast_furnace
     - smoker
-    - "#all_signs"
+    - "#signs"
     - "#doors"
     - ladder
     - lever
@@ -43,16 +43,15 @@ allowedBlocks:
     - "#fences"
     - glowstone
     - cake
-    - chain
     - repeater
     - "#trapdoors"
     - "#stone_bricks"
     - iron_bars
     - "#fence_gates"
-    - nether_bricks
+    - nether_brick
     - enchanting_table
     - brewing_stand
-    - "#cauldrons"
+    - cauldron
     - end_stone
     - dragon_egg
     - redstone_lamp
@@ -62,7 +61,7 @@ allowedBlocks:
     - emerald_block
     - beacon
     - "#walls"
-    - "#flower_pots"
+    - flower_pot
     - "#heads"
     - "#banners"
     - "#anvil"

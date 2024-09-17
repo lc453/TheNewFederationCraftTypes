@@ -131,7 +131,7 @@ collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 99.0
-overallSinkPercent: 85.0
+overallSinkPercent: 99.0
 keepMovingOnSink: false
 tryNudge: false
 

@@ -103,7 +103,7 @@ underwaterDetectionMultiplier: 4.0
 # How the craft acts when it crashes or sinks
 collisionExplosion: 0.0
 sinkPercent: 99.0
-overallSinkPercent: 60
+overallSinkPercent: 99.0 # Cars and tanks are harder to sink because they only need redstone, so give them less margine
 keepMovingOnSink: false
 tryNudge: false
 
@@ -376,9 +376,3 @@ harvesterBladeBlocks:
     - lightning_rod
     - slime_block
     # FORBIDDEN BLOCKS
-
-    
-forbiddenSignStrings:
-    - launchSAM
-    - launchTorpedo
-    - LaunchASM
