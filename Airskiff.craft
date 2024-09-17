@@ -8,7 +8,7 @@ allowedBlocks:
     - "#logs"
     - "#planks" 
     - "#slabs"
-    - "#stairs"
+    - "#wooden_stairs"
     - "#wool"
     - coal_block
     - diamond_block
@@ -90,6 +90,8 @@ allowedBlocks:
 
 forbiddenBlocks:
     - bedrock
+forbiddenSignStrings:
+    - launchSAM
 
 onlyMovePlayers: true
 moveEntities: true
@@ -115,7 +117,7 @@ collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 99.0
-overallSinkPercent: 99.0
+overallSinkPercent: 75.0
 keepMovingOnSink: true
 sinkSpeed: 3.0
 tryNudge: false

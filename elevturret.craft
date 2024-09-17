@@ -46,10 +46,11 @@ allowedBlocks:
     - tripwire
     - tripwire_hook
     # DECORATIVE BLOCKS
+    - "#all_signs"
     - "#banners"
     - "#carpets"
     - "#heads"
-    - "#signs"
+    - "#flower_pots"
     - beacon
     - bell
     - bookshelf
@@ -74,7 +75,7 @@ allowedBlocks:
     - blast_furnace
     - brewing_stand
     - cartography_table
-    - cauldron
+    - "#cauldrons"
     - fletching_table
     - composter
     - grindstone
@@ -97,12 +98,14 @@ allowedBlocks:
 
 onlyMovePlayers: false
 moveEntities: true
-canDirectControl: false
+canDirectControl: true
 
 # How the craft moves
 canFly: true
 allowHorizontalMovement: false
 allowVerticalMovement: true
+canStaticMove: true
+maxStaticMove: 24
 speed: 1.0
 canCruise: false
 rotateAtMidpoint: false
@@ -112,9 +115,10 @@ detectionMultiplier: 10.0
 underwaterDetectionMultiplier: 10.0
 
 # How the craft acts when it crashes or sinks
+collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 4.0
 sinkPercent: 99.0
-overallSinkPercent: 99.0
+overallSinkPercent: 75.0
 keepMovingOnSink: false
 tryNudge: false
