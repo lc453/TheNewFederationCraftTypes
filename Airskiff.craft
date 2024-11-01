@@ -105,7 +105,7 @@ speed: 3.0
 canCruise: true
 cruiseSpeed: 4.0
 cruiseSkipBlocks: 2
-fuelBurnRate: 0.01
+fuelBurnRate: 0.2
 rotateAtMidpoint: true
 
 # Craft detection. Distance^2 < 10 * (craft size) * (active multiplier)

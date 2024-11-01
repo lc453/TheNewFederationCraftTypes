@@ -121,7 +121,7 @@ speed: 1.25
 canCruise: true
 cruiseSpeed: 8.0
 cruiseSkipBlocks: 24
-fuelBurnRate: 0.1
+fuelBurnRate: 1
 rotateAtMidpoint: true
 requireWaterContact: true
 

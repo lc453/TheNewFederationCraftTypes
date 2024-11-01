@@ -1,5 +1,5 @@
 name: Submarine
-maxSize: 1000
+maxSize: 1200
 minSize: 100
 allowedBlocks: 
     # BUILDING BLOCKS
@@ -118,7 +118,7 @@ speed: 2
 canCruise: true
 cruiseSpeed: 3.0
 cruiseSkipBlocks: 2
-fuelBurnRate: 0.3
+fuelBurnRate: 0.5
 rotateAtMidpoint: true
 requireWaterContact: true
 
@@ -131,7 +131,7 @@ collisionSound: block.amethyst_block.break
 collisionExplosion: 0.0
 explodeOnCrash: 2.0
 sinkPercent: 99.0
-overallSinkPercent: 85.0
+overallSinkPercent: 90.0
 keepMovingOnSink: false
 tryNudge: false
 
@@ -141,12 +141,12 @@ flyblocks:
         - 100.0
     "#chests": # limit chests to make big airships important for merchant missions
         - 0.0
-        - N2
+        - 1.0
     "#anvil": # anvils are OP armor, so limit it
         - 0.0
         - 1.0
     iron_block:
-        - 25.0
+        - 10.0
         - 100.0
     coal_block:
         - 0.0
