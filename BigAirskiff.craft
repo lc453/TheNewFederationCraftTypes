@@ -7,7 +7,8 @@ allowedBlocks:
     - "#glass"
     - "#logs"
     - "#planks" 
-    - "#slabs"
+    - "#wooden_slabs" 
+    - "#armor_slabs"
     - "#wooden_stairs"
     - "#wool"
     - coal_block
@@ -46,6 +47,9 @@ allowedBlocks:
     - "#carpets"
     - "#heads"
     - "#flower_pots"
+    - "#copper_doors"
+    - "#copper_trapdoors"
+    - "#copper_grates"
     - beacon
     - bell
     - bookshelf

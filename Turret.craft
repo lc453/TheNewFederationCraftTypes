@@ -5,8 +5,9 @@ allowedBlocks:
     # BUILDING BLOCKS
     - "#glass"
     - "#logs"
-    - "#planks" 
-    - "#slabs"
+    - birch_planks 
+    - "#wooden_slabs" 
+    - "#armor_slabs"
     - "#wooden_stairs"
     - gray_terracotta
     - light_gray_terracotta
@@ -24,6 +25,7 @@ allowedBlocks:
     # REDSTONE
     - "#buttons"
     - "#pressure_plates"
+    - "#copper_bulbs"
     - activator_rail
     - comparator
     - daylight_detector
@@ -49,6 +51,9 @@ allowedBlocks:
     - "#carpets"
     - "#heads"
     - "#flower_pots"
+    - "#copper_doors"
+    - "#copper_trapdoors"
+    - "#copper_grates"
     - beacon
     - bell
     - bookshelf
