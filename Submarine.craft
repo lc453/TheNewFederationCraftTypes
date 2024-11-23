@@ -19,6 +19,8 @@ allowedBlocks:
     - coal_block
     - end_stone
     - end_stone_bricks
+    - end_stone_brick_slab
+    - end_stone_brick_stairs
     - nether_bricks
     - quartz_block
     - quartz_pillar
